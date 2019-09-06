@@ -334,7 +334,7 @@ module.exports = {
 
     transporter = nodemailer.createTransport(smtpConfig)
 
-    mailList = ['admin_emails']
+    mailList = process.env.ADMIN_EMAILS
 
     mailList.forEach (to) ->
       mailData = {
@@ -360,7 +360,7 @@ module.exports = {
 
           transporter = nodemailer.createTransport(smtpConfig)
 
-          mailList = ['admin_emails']
+          mailList = process.env.ADMIN_EMAILS
 
           mailList.forEach (to) ->
             mailData = {
@@ -453,7 +453,7 @@ module.exports = {
 
         transporter = nodemailer.createTransport(smtpConfig)
 
-        mailList = ['admin_emails']
+        mailList = process.env.ADMIN_EMAILS
 
         mailList.forEach (to) ->
           mailData = {
@@ -479,7 +479,7 @@ module.exports = {
 
               transporter = nodemailer.createTransport(smtpConfig)
 
-              mailList = ['admin_emails']
+              mailList = process.env.ADMIN_EMAILS
 
               mailList.forEach (to) ->
                 mailData = {
@@ -701,7 +701,7 @@ module.exports = {
 
     transporter = nodemailer.createTransport(smtpConfig)
 
-    mailList = ['admin_emails']
+    mailList = process.env.ADMIN_EMAILS
 
     mailList = email.split(',')
 

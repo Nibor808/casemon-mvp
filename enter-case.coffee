@@ -166,7 +166,7 @@ module.exports = {
 
     transporter = nodemailer.createTransport(smtpConfig)
 
-    mailList = ['tom@centercloud.com', 're@incubo.ca', 'sallan@sallan.com', 'jose.casemon@gmail.com']
+    mailList = process.env.ADMIN_EMAILS
 
     mailList.forEach (to) ->
       mailData = {
@@ -191,7 +191,7 @@ module.exports = {
 
           transporter = nodemailer.createTransport(smtpConfig)
 
-          mailList = ['tom@centercloud.com', 're@incubo.ca', 'sallan@sallan.com', 'jose.casemon@gmail.com']
+          mailList = process.env.ADMIN_EMAILS
 
           mailList.forEach (to) ->
             mailData = {
